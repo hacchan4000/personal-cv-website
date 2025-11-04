@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 // next js itu pake routing file sistem jd rute dalam app ku nurut sm gmn ak struktur file-filenya
-
+// layout.tsx for shared UI such as header, nav, or footer,
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
