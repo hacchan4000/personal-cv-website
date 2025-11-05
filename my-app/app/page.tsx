@@ -14,27 +14,26 @@ import {
 export default function Example() { //
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
-  return (
+  return ( 
     <header className="bg-black text-white">
       
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8">
-        {/* Left side — Logo or Title */}
 
-
-        {/* Right side — Menu button (mobile) */}
-        <div className="flex lg:hidden">
+        {/* ini komen dalem jsx */} 
+        <div className="flex lg:hidden w-full justify-end">
           <button
             type="button"
             onClick={() => setMobileMenuOpen(true)}
             className="inline-flex items-center justify-center rounded-md p-2 text-gray-400 hover:text-white hover:bg-gray-800"
           >
-            <Bars3Icon className="h-6 w-7" aria-hidden="true" />
+            <Bars3Icon className="h-6 w-6" aria-hidden="true" />
           </button>
         </div>
 
-        {/* Desktop Nav Links */}
-        <PopoverGroup className="hidden lg:flex lg:gap-x-90">
-          <a href="#" className="text-base md:text-lg lg:text-xl font-bold hover:text-gray-300 transition">ABOUT</a>
+
+        {/* Desktop Nav Links */} 
+        <PopoverGroup className="hidden md:flex md:gap-x-10 lg:gap-x-40 xl:gap-x-60 2xl:gap-x-90 transition-all duration-300">
+          <a href="#" className="text-base md:text-lg lg:text-xl font-bold hover:text-gray-300 transition">ABOUT</a> 
           <a href="#" className="text-base md:text-lg lg:text-xl font-bold hover:text-gray-300 transition">BLOGS</a>
           <a href="#" className="text-base md:text-lg lg:text-xl font-bold hover:text-gray-300 transition">PROJECTS</a>
           <a href="#" className="text-base md:text-lg lg:text-xl font-bold hover:text-gray-300 transition">CONTACT</a>
@@ -45,13 +44,13 @@ export default function Example() { //
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden">
         <div className="fixed inset-0 z-50 bg-black/70" aria-hidden="true" />
         <DialogPanel className="fixed inset-y-0 right-0 z-50 w-full max-w-sm bg-gray-900 p-6 overflow-y-auto">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-end">
 
             <button
               onClick={() => setMobileMenuOpen(false)}
               className="rounded-md p-2 text-gray-400 hover:text-white hover:bg-gray-800"
             >
-              <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+              <XMarkIcon className="h-6 w-6 ml-auto" aria-hidden="true" />
             </button>
           </div>
 
