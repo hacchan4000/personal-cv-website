@@ -1,4 +1,6 @@
 'use client'
+import {Mohave} from 'next/font/google';
+
 //page untuk header
 import { useState } from 'react'
 import {
