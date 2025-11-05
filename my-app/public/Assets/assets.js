@@ -3,7 +3,7 @@ import ad1 from './ad1.png';
 import ad2 from './ad2.png';
 import ad3 from './ad3.png';
 import adamHello from './ad3.png';
-import nookie from './nookie.PNG';
+import logo from './logo.png'
 
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
@@ -23,7 +23,7 @@ export const assets = {
     ad2,
     ad3,
     adamHello,
-    nookie
+    logo
 }
 export const skills = {
     godot_logo,
