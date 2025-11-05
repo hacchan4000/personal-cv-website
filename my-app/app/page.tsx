@@ -15,7 +15,7 @@ export default function Example() { //
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
 
   return ( 
-    <header className="bg-black text-white">
+    <header className="bg-black text-white ">
       
       <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-center p-6 lg:px-8">
 
@@ -54,7 +54,7 @@ export default function Example() { //
             </button>
           </div>
 
-          <div className="mt-6 flex flex-col space-y-4">
+          <div className="mt-6 w-full flex text-[40px] space-y-4">
             <a href="#" className="text-lg font-semibold hover:text-gray-300">ABOUT</a>
             <a href="#" className="text-lg font-semibold hover:text-gray-300">BLOGS</a>
             <a href="#" className="text-lg font-semibold hover:text-gray-300">PROJECTS</a>
