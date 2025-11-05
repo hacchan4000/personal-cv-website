@@ -4,6 +4,8 @@ import ad2 from './ad2.png';
 import ad3 from './ad3.png';
 import adamHello from './ad3.png';
 import logo from './logo.png'
+import menu from './menu-bar.png'
+
 
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
@@ -23,7 +25,8 @@ export const assets = {
     ad2,
     ad3,
     adamHello,
-    logo
+    logo,
+    menu,
 }
 export const skills = {
     godot_logo,
