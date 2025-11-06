@@ -16,9 +16,9 @@ const navbar = () => {
     <div>
 
     </div>
-      <nav className='w-full fixed px-6 lg:px-8 xl:px-[2%] py-2 flex items-center justify-between z-50 drop-shadow-2xl bg-opacity-50'>
+      <nav className='w-full fixed px-6 lg:px-8 xl:px-[2%] py-2 flex items-center justify-between z-30 drop-shadow-2xl bg-black bg-opacity-50'>
         <a href="#top">
-           <Image src={assets.logo} alt='' className='w-23 cursor-pointer mr-10' />
+           <Image src={assets.logo} alt='' className='w-20 cursor-pointer mr-17' />
         </a>
         <ul className='hidden md:flex items-center gap-10 lg:gap-25 rounded-full px-12 py-3 mr-15 text-[25px]'>
             <li><a href="#top">HOME</a></li>

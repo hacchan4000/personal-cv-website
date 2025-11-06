@@ -5,7 +5,7 @@ import ad3 from './ad3.png';
 import adamHello from './ad3.png';
 import logo from './logo.png'
 import menu from './menu-bar.png'
-
+import text_page1 from './text-page1.png';
 
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
@@ -27,6 +27,7 @@ export const assets = {
     adamHello,
     logo,
     menu,
+    text_page1
 }
 export const skills = {
     godot_logo,
