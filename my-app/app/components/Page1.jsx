@@ -22,7 +22,7 @@ const Page1 = () => {
       <div
         className="
           absolute bottom-0 z-20 w-full flex justify-center
-          sm:translate-y-0 md:translate-y-40 lg:translate-y-110 xl:translate-y-124 2xl:translate-y-140
+          sm:translate-y-0 md:translate-y-40 lg:translate-y-110 xl:translate-y-124 2xl:translate-y-160
         "
       >
         <Image

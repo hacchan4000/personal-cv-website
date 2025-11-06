@@ -18,6 +18,11 @@ import Next_js_logo from './Skills/Next.js_wordmark.svg';
 import React_Logo from './Skills/React_Logo_SVG.svg.png';
 import PHP_Logo from './Skills/PHP-logo.svg.png';
 import Unity_logo from './Skills/Unity_2021.svg.png'
+import Tailwind_logo from './Skills/Tailwind_CSS_logo_with_dark_text.svg.png'
+import JS_logo from './Skills/JavaScript-logo.png'
+import Java_logo from './Skills/Java_programming_language_logo.svg.png'
+import Python_logo from './Skills/Python-logo-notext.svg.png'
+import C_logo from './Skills/ISO_C++_Logo.svg.png'
 
 
 export const assets = {
@@ -39,7 +44,12 @@ export const skills = {
     CSS_logo,
     PHP_Logo,
     React_Logo,
-    Unity_logo
+    Unity_logo,
+    Tailwind_logo,
+    JS_logo,
+    Java_logo,
+    Python_logo,
+    C_logo
 }
 
 export const projectsData = [
