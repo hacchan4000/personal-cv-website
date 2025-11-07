@@ -1,6 +1,8 @@
 @import "tailwindcss";
 
 
+
+
 @font-face {
   font-family: 'MohaveBold';
   src: url('/Fonts/mohave-bold.ttf') format('truetype');
@@ -27,9 +29,22 @@
     --foreground: #ededed;
   }
 }
+html {
+  scroll-behavior: smooth;
+}
+
+main {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  height: 100vh;
+}
+section {
+  scroll-snap-align: start;
+}
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: 'MohaveBold', sans-serif;
 }
+

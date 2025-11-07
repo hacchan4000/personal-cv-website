@@ -1,23 +1,49 @@
-// untuk display skills n sertifikatku pake moving bento box
+'use client'
+//this is my-app/app/components/Page2.jsx
 import React from 'react'
 import Image from 'next/image'
-import { skills } from '@/public/Assets/Skills'
+import { skills } from '@/public/Assets/assets'
+import { assets } from '@/public/Assets/assets'
+import { div } from 'three/src/nodes/TSL.js'
 
 const Page2 = () => {
   return (
-    <div>
-      <div className='flex space-x-16 '>
-        <Image loading='lazy' src={skills.React_Logo} alt="React" className="max-w-none"/>
-        <Image loading='lazy' src={skills.Next_js_logo} alt="Next" className="max-w-none"/>
-        <Image loading='lazy' src={skills.HTML5_logo} alt="HTML5_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.CSS_logo} alt="CSS_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.PHP_Logo} alt="PHP_Logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.Laravel_logo} alt="Laravel_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.Logo_Blender} alt="Logo_Blender" className="max-w-none"/>
-        <Image loading='lazy' src={skills.MySQL_logo} alt="MySQL_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.godot_logo} alt="godot_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.Unity_logo} alt="Unity_logo" className="max-w-none"/>
-        <Image loading='lazy' src={skills.Tailwind_logo} alt="Tailwind_logo" className="max-w-none"/>
+    <div className='bg-black'>
+      <div className='absolute top-168 z-40'>
+        <Image src={assets.blur} alt=''/>
+      </div>
+      <div className="relative top-3 left-0 w-full overflow-hidden py-6 z-20 bg-black -rotate-3 ">
+              {/* My Skills */}
+              <div className="flex space-x-16 animate-loop-scroll bg-black">
+                {Object.entries(skills).map(([key, src]) => (
+                  <Image
+                    key={key}
+                    src={src}
+                    alt={key}
+                    className="max-w-none h-16 w-auto object-contain"
+                    loading="lazy"
+                  />
+                ))}
+              </div>
+              {/* Bento box */}
+              <div>
+                  <div className=' flex space-x-16 overflow-hidden '>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      
+                  </div>
+                  <div className=' flex space-x-16 overflow-hidden '>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                      
+                  </div>
+              </div>
+      
       </div>
     </div>
   )

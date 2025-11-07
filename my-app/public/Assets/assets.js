@@ -6,6 +6,7 @@ import adamHello from './ad3.png';
 import logo from './logo.png'
 import menu from './menu-bar.png'
 import text_page1 from './text-page1.png';
+import blur from './blur.png';
 
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
@@ -32,18 +33,19 @@ export const assets = {
     adamHello,
     logo,
     menu,
-    text_page1
+    text_page1,
+    blur
+    
 }
 export const skills = {
+    React_Logo,
     godot_logo,
     HTML5_logo,
+    CSS_logo,
+    PHP_Logo,
     Laravel_logo,
     Logo_Blender,
     MySQL_logo,
-    Next_js_logo,
-    CSS_logo,
-    PHP_Logo,
-    React_Logo,
     Unity_logo,
     Tailwind_logo,
     JS_logo,

@@ -1,18 +1,19 @@
 'use client'
-
+//this is my-app/app/components/Page1.jsx
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/public/Assets/assets'
+import { skills } from '@/public/Assets/assets'
 
 const Page1 = () => {
   return (
-    <div className="relative w-full h-screen overflow-scroll bg-black text-white flex items-center justify-center">
+    <div className="relative w-full h-screen overflow-hidden bg-black text-white flex items-center justify-center">
       
       {/* 🧱 Background Text */}
       <h1
         className="
-          absolute top-20 font-bold text-center leading-none w-full
-          text-[100px] sm:text-[120px] md:text-[146px] lg:text-[193px] xl:text-[240px] 2xl:text-[290px]
+          absolute top-16 font-bold text-center leading-none w-full
+          text-[min(18vw,300px)] whitespace-nowrap
         "
       >
         HI, I'M ADITYA
@@ -22,14 +23,14 @@ const Page1 = () => {
       <div
         className="
           absolute bottom-0 z-20 w-full flex justify-center
-          sm:translate-y-0 md:translate-y-40 lg:translate-y-110 xl:translate-y-124 2xl:translate-y-160
+          sm:translate-y-0 md:translate-y-40 lg:translate-y-110 xl:translate-y-120 2xl:translate-y-109
         "
       >
         <Image
           src={assets.ad1}
           alt="Aditya"
           className="
-            w-[360px] sm:w-[350px] md:w-[450px] lg:w-[580px] xl:w-[600px] 2xl:w-[670px]
+            w-[360px] sm:w-[350px] md:w-[450px] lg:w-[580px] xl:w-[600px] 2xl:w-[610px]
           "
         />
       </div>
@@ -71,6 +72,40 @@ const Page1 = () => {
             Contact Me
           </span>
         </button>
+      </div>
+
+      <div className="absolute top-220 left-0 w-full overflow-hidden py-6 z-20 bg-black rotate-3">
+        {/* My Skills */}
+        <div className="flex space-x-16 animate-loop-scroll">
+          {Object.entries(skills).map(([key, src]) => (
+            <Image
+              key={key}
+              src={src}
+              alt={key}
+              className="max-w-none h-16 w-auto object-contain"
+              loading="lazy"
+            />
+          ))}
+        </div>
+        {/* Bento box */}
+        <div>
+            <div className=' flex space-x-16 overflow-hidden '>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                
+            </div>
+            <div className=' flex space-x-16 overflow-hidden '>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
+                
+            </div>
+        </div>
+
       </div>
     </div>
   )
