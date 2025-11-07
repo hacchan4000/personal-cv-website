@@ -9,7 +9,7 @@ const Page6 = () => {
           text-[clamp(3rem,10vw,10rem)] 
           tracking-tight'
           >BLOGS
-        </h1>
+      </h1>
     </div>
   )
 }
