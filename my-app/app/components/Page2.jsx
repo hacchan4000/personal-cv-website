@@ -10,6 +10,7 @@ const Page2 = () => {
   return (
     <div className='bg-black'>
       <div className='absolute top-195 z-40'>
+        {/* blur image boundary between page 1 and two */}
         <Image src={assets.blur} alt=''/>
       </div>
       <div className="relative top-3 left-0 w-full overflow-hidden py-6 z-20 bg-black -rotate-3 ">

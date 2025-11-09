@@ -48,6 +48,8 @@ const Page1 = () => {
           and ML engineering while also possessing web development skills (UI/UX & front-end). 
           
         </p>
+
+        <p> below is the software i used and my certificates</p>
       </div>
 
       {/* 📞 Contact Button */}
@@ -74,39 +76,7 @@ const Page1 = () => {
         </button>
       </div>
 
-      <div className="absolute top-220 left-0 w-full overflow-hidden py-6 z-20 bg-black rotate-3">
-        {/* My Skills */}
-        <div className="flex space-x-16 animate-loop-scroll">
-          {Object.entries(skills).map(([key, src]) => (
-            <Image
-              key={key}
-              src={src}
-              alt={key}
-              className="max-w-none h-16 w-auto object-contain"
-              loading="lazy"
-            />
-          ))}
-        </div>
-        {/* Bento box */}
-        <div>
-            <div className=' flex space-x-16 overflow-hidden '>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                
-            </div>
-            <div className=' flex space-x-16 overflow-hidden '>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                
-            </div>
-        </div>
-
-      </div>
+    
     </div>
   )
 }

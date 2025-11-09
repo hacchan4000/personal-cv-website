@@ -9,7 +9,7 @@ export default {
   theme: {
     extend: {
       keyframes: {
-        "loop-scroll": {
+        "loop-scroll": {on
           from: { transform: "translateX(0)" },
           to: { transform: "translateX(-100%)" },
         },

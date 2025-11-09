@@ -7,6 +7,19 @@ import logo from './logo.png'
 import menu from './menu-bar.png'
 import text_page1 from './text-page1.png';
 import blur from './blur.png';
+import TextFooter from './text.png';
+
+//icons
+import img1 from './icons/img1.png';
+import img2 from './icons/img2.png';
+import img3 from './icons/img3.png';
+import img4 from './icons/img4.png';
+import img5 from './icons/img5.png';
+import img6 from './icons/img6.png';
+import img7 from './icons/img7.png';
+import img8 from './icons/img8.png';
+import img9 from './icons/img9.png';
+import img10 from './icons/img10.png';
 
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
@@ -34,8 +47,23 @@ export const assets = {
     logo,
     menu,
     text_page1,
-    blur
+    blur,
+    TextFooter
     
+}
+
+export const icons = {
+    img1,
+    img2,
+    img3,
+    img4,
+    img5,
+    img6,
+    img7,
+    img8,
+    img9,
+    img10,
+
 }
 export const skills = {
     React_Logo,

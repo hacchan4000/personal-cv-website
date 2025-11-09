@@ -28,8 +28,8 @@ const navbar = () => {
         </ul>
         <div className='flex items-center gap-2
         '>
-            <a href="#donation" className='hidden lg:flex items-center gap-3 px-8 py-2.5 ml-4 text-[25px]'>
-                💸
+            <a href="#connect" className='hidden lg:flex items-center gap-3 px-8 py-2 ml-4 text-[25px]'>
+                📨
             </a>
             <button className='block md:hidden ml-3 cursor-pointer' onClick={openMobileMenu}>
                 <Image src={assets.menu} alt='' className='w-13' />
