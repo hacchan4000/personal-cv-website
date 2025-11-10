@@ -21,6 +21,15 @@ import img8 from './icons/img8.png';
 import img9 from './icons/img9.png';
 import img10 from './icons/img10.png';
 
+//sertif
+import sertif1 from './certificates/sertif1.png';
+import sertif2 from './certificates/sertif2.png';
+import sertif3 from './certificates/sertif3.png';
+import sertif4 from './certificates/sertif4.png';
+import sertif5 from './certificates/sertif5.png';
+import sertif6 from './certificates/sertif6.png';
+import sertif7 from './certificates/sertif7.png';
+
 //import gambar buat list skillsku
 import godot_logo from './Skills/Godot_logo.svg.png';
 import HTML5_logo from './Skills/HTML5_logo_and_wordmark.svg.png';
@@ -82,7 +91,17 @@ export const skills = {
     C_logo
 }
 
-export const projectsData = [
+export const certificates = {
+    sertif1,
+    sertif2,
+    sertif3,
+    sertif4,
+    sertif5,
+    sertif6,
+    sertif7,
+}
+
+export const about = [
     {
         judul: '',
         deskripsi: '',

@@ -44,17 +44,32 @@ const Footer = () => {
         </div>
         
       </div>
-      <div className="flex space-x-20 justify-between overflow-hidden bg-black">
-            <Image src={icons.img1} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img2} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img3} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img4} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img5} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img6} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img7} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img8} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img9} alt="img" className="max-w-none h-30 w-auto object-contain"/>
-            <Image src={icons.img10} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+      <div className="flex space-x-16 overflow-hidden group">
+        <div className="flex space-x-20 bg-black animate-loop-scroll group-hover:paused">
+          <Image src={icons.img1} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img2} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img3} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img4} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img5} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img6} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img7} alt="img" className="max-w-none h-30 w-auto object-contain"/>            
+          <Image src={icons.img8} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img9} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img10} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+        </div>
+        <div className="flex space-x-20  bg-black animate-loop-scroll" aria-hidden="true">
+          <Image src={icons.img1} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img2} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img3} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img4} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img5} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img6} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img7} alt="img" className="max-w-none h-30 w-auto object-contain"/>            
+          <Image src={icons.img8} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img9} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+          <Image src={icons.img10} alt="img" className="max-w-none h-30 w-auto object-contain"/>
+        </div>
+            
 
           </div>
     </div>

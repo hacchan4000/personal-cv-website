@@ -54,3 +54,33 @@ body {
     justify-start flex 
   }
 }
+
+@keyframes loop-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+@keyframes loop-scroll2 {
+  from {
+    transform: translateX(-100%);
+  }
+  to {
+    transform: translateX(100%);
+  }
+}
+.animate-loop-scroll2 {
+  animation: loop-scroll2 60s linear infinite;
+}
+.animate-loop-scroll {
+  animation: loop-scroll 50s linear infinite;
+}
+
+
+@layer utilities{
+  .paused {
+    animation-play-state: paused;
+  }
+}
