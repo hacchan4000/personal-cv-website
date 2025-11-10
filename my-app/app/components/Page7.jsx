@@ -1,15 +1,24 @@
 // page untuk hubungin aku
 import React from 'react'
+import { assets } from '@/public/Assets/assets'
+import Image from 'next/image'
+
 
 const Page7 = () => {
   return (
     <div id='connect' className='relative w-full h-200 bg-white text-black flex flex-col overflow-hidden '>
       <div className='w-full h-10 bg-black rounded-b-4xl'></div>
 
+      <div className='flex-col'>
+        <Image src={assets.nookie} alt='nook' className='absolute w-100 justify-center items-center'/>
+        <Image src={assets.adamHello} alt='adam' className=' absolute w-100 justify-center items-center top-90'/>
+
+      </div>
+
       <div className='relative flex justify-center items-center '>
           <div className='absolute top-30 left-50'>
 
-            <h1 className='mt-10 mb-20 
+            <h1 className='mt-10 mb-20 ml-25
               text-center font-extrabold 
               text-[100px] 
               max-w-20 tracking-tight '
@@ -31,11 +40,6 @@ const Page7 = () => {
 
 
       </div>
-
-
-      
-
-      
 
       <div className='absolute w-full bottom-0 h-10 bg-black rounded-t-4xl'></div>
       

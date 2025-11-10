@@ -13,26 +13,17 @@ const Page6 = () => {
 
       <div className='relative top-3 left-0 w-full overflow-hidden py-6 z-20'>
           <div>
-          <div className=' flex space-x-16 overflow-hidden '>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                                
-        </div>
+            <div className=' flex space-x-16 overflow-hidden w-800 '>
+            <div className='rounded-2xl w-200 h-80 border-2 border-white bg-black mx-2 my-2'></div>
+            <div className='rounded-2xl w-200 h-80 border-2 border-white bg-black mx-2 my-2'></div>
+            <div className='rounded-2xl w-200 h-80 border-2 border-white bg-black mx-2 my-2'></div>
+            <div className='rounded-2xl w-200 h-80 border-2 border-white bg-black mx-2 my-2'></div>
+            <div className='rounded-2xl w-200 h-80 border-2 border-white bg-black mx-2 my-2'></div>
+                                  
+          </div>
                             
-        </div>
-        <div className=''>
-          <div className=' flex space-x-16 overflow-hidden '>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-          <div className='rounded-2xl w-100 h-50 bg-white mx-2 my-2'></div>
-                                
-        </div>
-                            
-        </div>
+          </div>
+        
       </div>
       
 

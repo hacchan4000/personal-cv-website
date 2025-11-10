@@ -68,11 +68,11 @@ body {
     transform: translateX(-100%);
   }
   to {
-    transform: translateX(100%);
+    transform: translateX(0%);
   }
 }
 .animate-loop-scroll2 {
-  animation: loop-scroll2 60s linear infinite;
+  animation: loop-scroll2 40s linear infinite;
 }
 .animate-loop-scroll {
   animation: loop-scroll 50s linear infinite;

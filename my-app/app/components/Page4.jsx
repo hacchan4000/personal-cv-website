@@ -1,5 +1,8 @@
 //page untuk experienceku
 import React from 'react'
+import Image from 'next/image'
+import { assets } from '@/public/Assets/assets'
+
 
 const Page4 = () => {
   return (
@@ -60,6 +63,7 @@ const Page4 = () => {
             </p>
           </div>
         </div>
+
         <div className='card'>
           <div>
             <h1 className='text-[110px]'>04</h1>
@@ -74,7 +78,11 @@ const Page4 = () => {
               nulla distinctio?
             </p>
           </div>
+          <div>
+            <Image src={assets.design} alt='design'/>
+          </div>
         </div>
+
         <div className='card'>
           <div>
             <h1 className='text-[110px]'>05</h1>

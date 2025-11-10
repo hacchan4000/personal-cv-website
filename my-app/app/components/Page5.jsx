@@ -1,105 +1,98 @@
-//page display projectku
+'use client'
 import React from 'react'
 
 const Page5 = () => {
   return (
-    <div id='project' className='relative w-full h-250 bg-black text-white flex flex-col items-center justify-start overflow-hidden rounded-4xl'>
-      <h1 className='mt-10 mb-0 
-          text-center font-extrabold 
-          text-[clamp(3rem,10vw,10rem)] 
-          tracking-tight'
-          >PROJECTS
-      </h1>
-
-      <div className='overflow-scroll'>
-        <div className="sticky w-[1050px] h-[550px] mb-5">
-            <svg
-                width="100%"
-                height="100%"
-                className="rounded-3xl shadow-lg shadow-white/50"
-            >
-                <rect
-                width="100%"
-                height="100%"
-                className="stroke-white fill-black"
-                strokeWidth="4"
-                rx="25"
-                />
-            </svg>
-
-            {/* Overlayed HTML */}
-            <div className="absolute top-5 left-5 flex text-white">
-                <h1 className="text-[80px] font-bold">01</h1>
-                <div>
-                    <p className="text-4xl mt-4 mx-4">NAWASENA</p>
-                    <p className="text-md mx-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, vitae..</p>
-                </div>
-
-                <div className='absolute left-200'>
-                    <button className="border-2 border-white rounded-3xl px-5 w-50 
-                        hover:bg-white hover:text-black transition-all duration-300"
-                    >
-                        <span className=" text-[30px] font-semibold">
-                            Live Project
-                        </span>
-                    </button>
-                </div>
+    <div id="project" className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-start">
+        <h1 className="mt-20 mb-10 top-20 text-center font-extrabold text-[clamp(3rem,10vw,10rem)] tracking-tight">
+            PROJECTS
+        </h1>
+        {/* Container must be taller than screen */}
+        <div className="relative w-full flex flex-col items-center h-[320vh]">
+            {/* Card 1 */}
+            <div className="sticky top-30 h-190 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
                 
-                <div className='relative bg-white w-220 h-90 top-30 right-105 rounded-2xl'></div>
-                <div className='relative bg-white w-70 h-90 top-30 right-100 rounded-2xl'>
+                <div className='flex justify-start items-start top-0'>
+                    <h1 className="relative font-bold left-0 text-[70px] -mt-4">01</h1>
+                    <div className='px-5'>
+                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <p className="text-gray-300">Description of your first project here.</p>
+                       
+                    </div>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-160 z-10 cursor-pointer'>
+                            Live Project
+                    </button>
                     
                 </div>
-                
-            
+               
             </div>
-        </div>
-        <div className="sticky w-[1050px] h-[550px]">
-            <svg
-                width="100%"
-                height="100%"
-                className="rounded-3xl shadow-lg shadow-white/50"
-            >
-                <rect
-                width="100%"
-                height="100%"
-                className="stroke-white fill-black"
-                strokeWidth="4"
-                rx="25"
-                />
-            </svg>
+            {/* Spacer to allow scroll */}
+            <div className="h-80"></div>
 
-            {/* Overlayed HTML */}
-            <div className="absolute top-5 left-5 flex text-white">
-                <h1 className="text-[80px] font-bold">01</h1>
-                <div>
-                    <p className="text-4xl mt-4 mx-4">NAWASENA</p>
-                    <p className="text-md mx-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Libero, vitae..</p>
-                </div>
 
-                <div className='absolute left-200'>
-                    <button className="border-2 border-white rounded-3xl px-5 w-50 
-                        hover:bg-white hover:text-black transition-all duration-300"
-                    >
-                        <span className=" text-[30px] font-semibold">
-                            Live Project
-                        </span>
-                    </button>
-                </div>
+            {/* Card 2 */}
+            <div className="sticky top-40 h-190 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
                 
-                <div className='relative bg-white w-220 h-90 top-30 right-105 rounded-2xl'></div>
-                <div className='relative bg-white w-70 h-90 top-30 right-100 rounded-2xl'>
+                <div className='flex justify-start items-start top-0'>
+                    <h1 className="relative font-bold left-0 text-[70px] -mt-4">02</h1>
+                    <div className='px-5'>
+                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <p className="text-gray-300">Description of your first project here.</p>
+                       
+                    </div>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158 z-10 cursor-pointer'>
+                            Live Project
+                    </button>
                     
                 </div>
-                
-            
+               
             </div>
-        </div>
-      </div>
-      
+            {/* Spacer to allow scroll */}
+            <div className="h-80"></div>
 
-      
+            {/* Card 3 */}
+            <div className="sticky top-50 h-190 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
+                
+                <div className='flex justify-start items-start top-0'>
+                    <h1 className="relative font-bold left-0 text-[70px] -mt-4">03</h1>
+                    <div className='px-5'>
+                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <p className="text-gray-300">Description of your first project here.</p>
+                       
+                    </div>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158'>
+                            Live Project
+                    </button>
+                    
+                </div>
+               
+            </div>
+
+            {/* Spacer to allow scroll */}
+            <div className="h-80"></div>
+            {/* Card 4 */}
+            <div className="sticky top-60 h-190 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
+                
+                <div className='flex justify-start items-start top-0'>
+                    <h1 className="relative font-bold left-0 text-[70px] -mt-4">04</h1>
+                    <div className='px-5'>
+                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <p className="text-gray-300">Description of your first project here.</p>
+                       
+                    </div>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158'>
+                            Live Project
+                    </button>
+                    
+                </div>
+               
+            </div>
+
+            {/* Spacer to allow scroll */}
+            <div className="h-80"></div>
+            
+        </div>
     </div>
-    
   )
 }
 

@@ -50,41 +50,28 @@ const Page2 = () => {
               </div>
               
               {/* Bento box */}
-              <div className='flex space-x-10 overflow-hidden my-10 animate-loop-scroll2'>
-                  <div className=' flex space-x-10 overflow-hidden ' aria-hidden="true">
+              <div className='flex space-x-16 overflow-hidden my-10 w-750'>
+                  <div className=' flex space-x-10 overflow-hidden animate-loop-scroll2'>
                       <Image loading='lazy' src={certificates.sertif1} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif2} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif3} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      
+                     
                   </div>
-                  <div className=' flex space-x-10 overflow-hidden ' aria-hidden="true">
+                  <div className=' flex space-x-10 overflow-hidden animate-loop-scroll2' >
                       <Image loading='lazy' src={certificates.sertif5} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif6} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif7} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       <Image loading='lazy' src={certificates.sertif7} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                  </div>
-              </div>
-              <div className='flex space-x-10 overflow-hidden my-10 justify-end'>
-                  <div className=' flex space-x-10 overflow-hidden ' aria-hidden="true">
-                      <Image loading='lazy' src={certificates.sertif1} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif2} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif4} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
+                      <Image loading='lazy' src={certificates.sertif7} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
                       
                   </div>
-                  <div className=' flex space-x-10 overflow-hidden ' aria-hidden="true">
-                      <Image loading='lazy' src={certificates.sertif5} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif6} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif7} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                      <Image loading='lazy' src={certificates.sertif7} alt='sertif' className='max-w-none h-80 w-auto object-contain rounded-xl'/>
-                  </div>
+                  
               </div>
+              
+             
               
       
       </div>
