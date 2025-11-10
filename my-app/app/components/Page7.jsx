@@ -1,10 +1,35 @@
 // page untuk hubungin aku
-import React from 'react'
+'use client'
 import { assets } from '@/public/Assets/assets'
+import React, { FormEvent, useEffect, useRef, useState } from "react";
 import Image from 'next/image'
 
 
 const Page7 = () => {
+  const [name, setName] = useState('')
+  const [email, setEmail] = useState('')
+  const [number, setNumber] = useState('')
+  const [pesan, setPesan] = useState('')
+
+ const onSubmited = async (e) => {
+  e.preventDefault();
+  console.log("berhasil ngirim data", name);
+
+  try{
+    const hasil = await fetch('./contact.js', {
+      method: 'POST',
+      body: JSON.stringify({
+        name, email, number, pesan
+      }),
+      headers:{
+        'content-type': 'application/json',
+      },
+    }) //kemungkinan bakal error here
+  }catch(error){
+    console.log("erorr", error)
+  }
+};
+
   return (
     <div id='connect' className='relative w-full h-200 bg-white text-black flex flex-col overflow-hidden '>
       <div className='w-full h-10 bg-black rounded-b-4xl'></div>
@@ -28,14 +53,15 @@ const Page7 = () => {
 
           {/* form untuk ngirim email ke aku */}
           <div className='absolute top-35 flex-col max-w-20 justify-center items-center'>
-            <form action="">
-              <input type="text" placeholder='Email' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
-              <input type="text" placeholder='Phone Number' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
-              <input type="text" placeholder='Socials' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
-              <textarea name="" placeholder='Message' id=""  className='bg-[#D9D9D9]/20 h-50 w-150 my-5 drop-shadow-lg p-3 rounded-4xl' ></textarea>
+            <form action="" onSubmit={onSubmited}>
+              <input value={name} onChange={(e => setName(e.target.value))} type="text" placeholder='Name' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
+              <input value={email} onChange={(e => setEmail(e.target.value))} type="email" placeholder='Email' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
+              <input value={number} onChange={(e => setNumber(e.target.value))} type="text" placeholder='Phone Number' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
+              <textarea value={pesan} onChange={(e => setPesan(e.target.value))} placeholder='Message' id=""  className='bg-[#D9D9D9]/20 h-50 w-150 my-5 drop-shadow-lg p-3 rounded-4xl' ></textarea>
+              <button type='submit' className='absolute bg-[#75CFFF] px-20 py-3 rounded-full text-white drop-shadow-lg left-55 cursor-pointer'>Send</button>
+
             </form>
 
-            <button type='submit' className='absolute bg-[#75CFFF] px-20 py-3 rounded-full text-white drop-shadow-lg left-55'>Send</button>
           </div>
 
 

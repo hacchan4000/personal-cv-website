@@ -15,11 +15,11 @@ const Page5 = () => {
                 <div className='flex justify-start items-start top-0'>
                     <h1 className="relative font-bold left-0 text-[70px] -mt-4">01</h1>
                     <div className='px-5'>
-                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <h2 className="text-3xl font-bold ">NAWASENA</h2>
                         <p className="text-gray-300">Description of your first project here.</p>
                        
                     </div>
-                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-160 z-10 cursor-pointer'>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-160 z-10 cursor-pointer hover:bg-white hover:text-black transition-all duration-300'>
                             Live Project
                     </button>
                     
@@ -36,11 +36,11 @@ const Page5 = () => {
                 <div className='flex justify-start items-start top-0'>
                     <h1 className="relative font-bold left-0 text-[70px] -mt-4">02</h1>
                     <div className='px-5'>
-                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <h2 className="text-3xl font-bold ">ASAH CAPSTONE</h2>
                         <p className="text-gray-300">Description of your first project here.</p>
                        
                     </div>
-                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158 z-10 cursor-pointer'>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158 z-10 cursor-pointer hover:bg-white hover:text-black transition-all duration-300'>
                             Live Project
                     </button>
                     
@@ -56,11 +56,11 @@ const Page5 = () => {
                 <div className='flex justify-start items-start top-0'>
                     <h1 className="relative font-bold left-0 text-[70px] -mt-4">03</h1>
                     <div className='px-5'>
-                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <h2 className="text-3xl font-bold ">ADITYA'S WORLD</h2>
                         <p className="text-gray-300">Description of your first project here.</p>
                        
                     </div>
-                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158'>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158 hover:bg-white hover:text-black transition-all duration-300'>
                             Live Project
                     </button>
                     
@@ -76,11 +76,11 @@ const Page5 = () => {
                 <div className='flex justify-start items-start top-0'>
                     <h1 className="relative font-bold left-0 text-[70px] -mt-4">04</h1>
                     <div className='px-5'>
-                        <h2 className="text-3xl font-bold ">Project One</h2>
+                        <h2 className="text-3xl font-bold ">GO And Start the Street</h2>
                         <p className="text-gray-300">Description of your first project here.</p>
                        
                     </div>
-                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-158'>
+                    <button className='relative bg-black border-2 border-white rounded-full p-2 px-5 ml-147 hover:bg-white hover:text-black transition-all duration-300'>
                             Live Project
                     </button>
                     

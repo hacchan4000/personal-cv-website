@@ -61,11 +61,7 @@ const Page1 = () => {
         "
       >
         <button
-          className="
-            flex items-center justify-center border-2 border-white rounded-full
-            px-5 py-2 sm:px-6 sm:py-3
-            hover:bg-white hover:text-black transition-all duration-300
-          "
+          className="tombol"
         >
           <span className="
             text-[15px] sm:text-[18px] md:text-[20px] lg:text-[25px] xl:text-[28px] 2xl:text-[32px]

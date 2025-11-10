@@ -48,10 +48,76 @@ body {
   font-family: 'MohaveBold', sans-serif;
 }
 
+
+
 @layer components {
   .card {
     @apply w-350 h-55 bg-white rounded-2xl drop-shadow-[0_10px_10px_rgba(0,0,0,0.2)] m-10 p-5
     justify-start flex 
+  }
+}
+
+
+@layer components {
+  .tombol {
+    @apply relative z-10 cursor-pointer text-white rounded-full px-10 py-4 border-2 border-white outline-none transition-all duration-300;
+  }
+
+  .tombol::after {
+    content: "";
+    @apply absolute left-0 top-0 w-full h-full bg-black rounded-full;
+    z-index: -1;
+  }
+
+  .tombol::before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 600%;
+    z-index: -1;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    filter: blur(8px);
+    border-radius: 60px;
+    opacity: 0;
+    animation: glowing 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+  }
+
+  .tombol:hover::before {
+    opacity: 1;
+  }
+
+  .tombol:active::after {
+    background: transparent;
+  }
+
+  .tombol:active {
+    @apply text-black font-bold;
+  }
+
+  @keyframes glowing {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
   }
 }
 
