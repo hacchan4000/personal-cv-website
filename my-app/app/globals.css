@@ -1,8 +1,6 @@
 @import "tailwindcss";
 
 
-
-
 @font-face {
   font-family: 'MohaveBold';
   src: url('/Fonts/mohave-bold.ttf') format('truetype');
@@ -56,6 +54,9 @@ body {
     justify-start flex 
   }
 }
+
+
+
 
 
 @layer components {
@@ -121,6 +122,9 @@ body {
   }
 }
 
+
+
+
 @keyframes loop-scroll {
   from {
     transform: translateX(0);
@@ -144,9 +148,24 @@ body {
   animation: loop-scroll 50s linear infinite;
 }
 
-
 @layer utilities{
   .paused {
     animation-play-state: paused;
   }
 }
+
+@keyframes slidein {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animasiTeks {
+  animation: slidein 1s ease 300ms forwards;
+}
+

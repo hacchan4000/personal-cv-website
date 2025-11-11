@@ -16,7 +16,7 @@ const Page1 = () => {
       <h1
         className="
           absolute top-16 font-bold text-center leading-none w-full
-          text-[min(18vw,300px)] whitespace-nowrap
+          text-[min(18vw,300px)] whitespace-nowrap animasiTeks
         "
       >
         HI, I'M ADITYA
@@ -45,19 +45,19 @@ const Page1 = () => {
           max-w-[100px] sm:max-w-[200px] md:max-w-[230px] z-10
         "
       >
-        <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-200">
+        <p className="text-xs sm:text-sm md:text-base leading-relaxed text-gray-200 animasiTeks">
           I'm a Computer Science student from Udayana University with a deep understanding of
           various programming languages—especially Python, Java, and C. I focus on Big Data Analytics
           and ML engineering while also possessing web development skills (UI/UX & front-end). 
           
         </p>
 
-        <p> below is the software i used and my certificates</p>
+        <p className='animasiTeks'> below is the software i used and my certificates</p>
       </div>
 
       {/* 📞 Contact Button */}
       <div
-        className="
+        className=" animasiTeks
           absolute right-8 sm:right-12 md:right-20 lg:right-32 xl:right-40 2xl:right-52
           bottom-[390px] sm:bottom-100 md:bottom-90 lg:bottom-80 xl:bottom-70 2xl:bottom-60
           z-30

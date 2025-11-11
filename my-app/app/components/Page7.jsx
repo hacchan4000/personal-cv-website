@@ -1,4 +1,4 @@
-// page untuk hubungin aku
+// page my-app/app/components/Page7.jsx 
 'use client'
 import { assets } from '@/public/Assets/assets'
 import React, { FormEvent, useEffect, useRef, useState } from "react";
@@ -15,19 +15,27 @@ const Page7 = () => {
   e.preventDefault();
   console.log("berhasil ngirim data", name);
 
-  try{
-    const hasil = await fetch('./contact.js', {
+  try {
+    const res = await fetch('/api/contact', {
       method: 'POST',
-      body: JSON.stringify({
-        name, email, number, pesan
-      }),
-      headers:{
-        'content-type': 'application/json',
-      },
-    }) //kemungkinan bakal error here
-  }catch(error){
-    console.log("erorr", error)
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ name, email, number, pesan }),
+    });
+
+    if (res.ok) {
+      alert('Message sent successfully!');
+      setName('');
+      setEmail('');
+      setNumber('');
+      setPesan('');
+    } else {
+      alert('Failed to send message');
+    }
+  } catch (error) {
+    console.error('Error:', error);
+    alert('Something went wrong!');
   }
+
 };
 
   return (
