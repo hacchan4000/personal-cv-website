@@ -40,7 +40,7 @@ export const Timeline = ({ data }) => {
         </p>
       </div>
 
-      <div ref={ref} className="relative max-w-7xl mx-auto pb-20 h-screen overflow-scroll">
+      <div ref={ref} className="relative max-w-7xl mx-auto pb-20 h-screen overflow-scroll scrollbar-hide">
         {data.map((item, index) => (
           <div
             key={index}
