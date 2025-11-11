@@ -52,7 +52,7 @@ import C_logo from './Skills/ISO_C++_Logo.svg.png'
 import gambar1 from './history/gambar1.png'
 import gambar3 from './history/gambar3.png'
 
-
+//aset di seluruh halaman
 export const assets = {
     ad1,
     ad2,
@@ -68,6 +68,7 @@ export const assets = {
     
 }
 
+//untuk footer
 export const icons = {
     img1,
     img2,
@@ -82,6 +83,7 @@ export const icons = {
 
 }
 
+//untuk page 2
 export const skills = {
     React_Logo,
     godot_logo,
@@ -98,7 +100,6 @@ export const skills = {
     Python_logo,
     C_logo
 }
-
 export const certificates = {
     sertif1,
     sertif2,
@@ -109,6 +110,7 @@ export const certificates = {
     sertif7,
 }
 
+//untuk timeline about me page 3
 export const data = [
     {
       title: "2004",
@@ -332,40 +334,36 @@ export const data = [
     },
 ];
 
-export const history = {
-    gambar1,
-    gambar3,
-}
 
-export const experienceData = [
+export const experience = [
     {
-        icon:'',
+        num:'01',
         judul: 'GAME DEVELOPMENT',
-        deskripsi: 'lorem ipsum dolor sit amet',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
         link: ''
     },
     {
-        icon:'',
+        num:'02',
         judul: 'WEB DEVELOPMENT',
-        deskripsi: 'lorem ipsum dolor sit amet',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
         link: ''
     },
     {
-        icon:'',
+        num:'03',
         judul: 'DATA SCIENCE',
-        deskripsi: 'lorem ipsum dolor sit amet',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
         link: ''
     },
     {
-        icon:'',
+        num:'04',
         judul: 'GRAPHIC DESIGN',
-        deskripsi: 'lorem ipsum dolor sit amet',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
         link: ''
     },
     {
-        icon:'',
+        icon:'05',
         judul: '3D DESIGN & ANIMATION',
-        deskripsi: 'lorem ipsum dolor sit amet',
+        deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
         link: ''
     }
 ]

@@ -1,7 +1,7 @@
 //page untuk experienceku
 import React from 'react'
 import Image from 'next/image'
-import { assets } from '@/public/Assets/assets'
+import { assets, experience } from '@/public/Assets/assets'
 
 
 const Page4 = () => {

@@ -1,4 +1,4 @@
-// page my-app/app/components/Page7.jsx 
+// page my-app/app/components/Page7.jsx untuk hubungi aku
 'use client'
 import { assets } from '@/public/Assets/assets'
 import React, { FormEvent, useEffect, useRef, useState } from "react";
@@ -66,7 +66,7 @@ const Page7 = () => {
               <input value={email} onChange={(e => setEmail(e.target.value))} type="email" placeholder='Email' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
               <input value={number} onChange={(e => setNumber(e.target.value))} type="text" placeholder='Phone Number' className='bg-[#D9D9D9]/20 h-10 w-150 my-5 drop-shadow-lg rounded-4xl p-3'/>
               <textarea value={pesan} onChange={(e => setPesan(e.target.value))} placeholder='Message' id=""  className='bg-[#D9D9D9]/20 h-50 w-150 my-5 drop-shadow-lg p-3 rounded-4xl' ></textarea>
-              <button type='submit' className='absolute bg-[#75CFFF] px-20 py-3 rounded-full text-white drop-shadow-lg left-55 cursor-pointer'>Send</button>
+              <button type='submit' className='absolute bg-[#75CFFF] px-20 py-3 rounded-full text-white drop-shadow-lg left-55 cursor-pointer active:bg-[#69bae6]'>Send</button>
 
             </form>
 

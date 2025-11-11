@@ -2,6 +2,7 @@
 'use client'
 import React from 'react'
 
+
 const Page5 = () => {
   return (
     <div id="project" className="relative w-full min-h-screen bg-black text-white flex flex-col items-center justify-start">
@@ -93,6 +94,7 @@ const Page5 = () => {
             <div className="h-80"></div>
             
         </div>
+        <div className="h-50"></div>
     </div>
   )
 }

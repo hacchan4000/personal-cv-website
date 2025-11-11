@@ -1,72 +1,60 @@
 // page untuk blogs
-import React from "react";
+//ini page bloglist
+'use client'
+import React, { useState } from "react";
+import { blogs, blogs2 } from '@/public/Assets/blogs_data' //ini blog data
+import Blog from './Blog.jsx'
 
-const blogs = [
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp"
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-  {
-    title: "Judul Blog",
-    desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
-    img: "https://assets.aceternity.com/templates/startup-1.webp",
-  },
-];
+
+
 
 const Page6 = () => {
+  const [menu, setMenu] = useState("All");
   return (
-    <div className="relative w-full min-h-screen bg-black text-white flex flex-col items-center overflow-hidden rounded-4xl">
+    <div className="relative w-full h-420 bg-black text-white flex flex-col items-center overflow-hidden rounded-4xl">
       <h1
         className="mt-10 mb-0 text-center font-extrabold 
         text-[clamp(3rem,10vw,10rem)] tracking-tight"
       >
         BLOGS
       </h1>
+      <div className="text-center">
+        <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base">This is my personal blog post where is share many stories that caught my interest. Feel free to browse around and even subscribe if you want to keep being updated and receive plenty opportunities.</p>
+
+        <form action="" className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border-2 border-white rounded-xl">
+          <input type="email" placeholder="Enter your email" className="pl-4 outline-none" />
+          <button type="submit" className='border-l-2 border-white py-4 px-4 sm:px-8 active:bg-white active:text-black rounded-r-lg'>
+              Sign Up
+          </button>
+        </form>
+        
+      </div>
+
+      <div className="flex justify-center gap-10 my-10">
+        <button onClick={() => setMenu('All')} className={menu ==="All" ? "py-1 px-4 rounded-full border-2 border-white text-black bg-white": "py-1 px-4 rounded-full border-2 border-white"}>All</button>
+        <button onClick={() => setMenu('Technology')} className={menu ==="Technology" ? "py-1 px-4 rounded-full border-2 border-white text-black bg-white": "py-1 px-4 rounded-full border-2 border-white"}>Technology</button>
+        <button onClick={() => setMenu('Fashion')} className={menu ==="Fashion" ? "py-1 px-4 rounded-full border-2 border-white text-black bg-white": "py-1 px-4 rounded-full border-2 border-white"}>Fashion</button>
+        <button onClick={() => setMenu('Machine Learning')} className={menu ==="Machine Learning" ? "py-1 px-4 rounded-full border-2 border-white text-black bg-white": "py-1 px-4 rounded-full border-2 border-white"}>Machine Learning</button>
+      </div>
 
       <div className="relative w-full py-6 z-20">
+        <div className="flex space-x-8 overflow-x-auto px-10 scrollbar-hide">
+
+          {blogs.filter((blog) => menu==="All"?true:blog.category===menu).map((blog, index) => {
+            return <Blog key={index} id={blog.id} image={blog.img} title={blog.title} desc={blog.desc} category={blog.category}/>
+          })}
+
+        </div>
 
         <div className="flex space-x-8 overflow-x-auto px-10 scrollbar-hide">
-          {blogs.map((blog, index) => (
-            <div
-              key={index}
-              className="flex flex-col border-2 border-white bg-black rounded-2xl min-w-[300px] max-w-[320px] p-4"
-            >
-              <img
-                src={blog.img}
-                alt={blog.title}
-                className="w-full h-40 rounded-lg object-cover shadow-md"
-              />
-              <h3 className="text-2xl mt-4 font-semibold">{blog.title}</h3>
-              <p className="text-sm mt-2">{blog.desc}</p>
-            </div>
-          ))}
+
+          {blogs2.filter((blog) => menu==="All"?true:blog.category===menu).map((blog, index) => {
+            return <Blog key={index} id={blog.id} image={blog.img} title={blog.title} desc={blog.desc} category={blog.category}/>
+          })}
+
         </div>
+
+        
 
       </div>
     </div>
