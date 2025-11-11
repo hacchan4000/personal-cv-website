@@ -7,7 +7,7 @@ import { assets } from '@/public/Assets/assets'
 const Page4 = () => {
   return (
     <div id='experience' className='relative w-full h-450 bg-white text-black flex flex-col items-center justify-start overflow-hidden rounded-4xl'>
-      <Image src={assets.design} alt='design' className='absolute'/>
+      
 
       <h1
         className="
@@ -66,8 +66,9 @@ const Page4 = () => {
           </div>
         </div>
 
+        <Image src={assets.design} alt='design' className='absolute w-100 right-0 bottom-110 z-0'/>
         <div className='card'>
-         
+          
           
           <div>
             <h1 className='text-[110px]'>04</h1>
@@ -84,7 +85,7 @@ const Page4 = () => {
           </div>
           
         </div>
-
+        <Image src={assets.ad2} alt='design' className='absolute w-90 '/>
         <div className='card'>
           <div>
             <h1 className='text-[110px]'>05</h1>

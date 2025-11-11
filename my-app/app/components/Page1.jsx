@@ -6,6 +6,9 @@ import { assets } from '@/public/Assets/assets'
 import { skills } from '@/public/Assets/assets'
 
 const Page1 = () => {
+  const kotakKu = () => {
+    window.open('https://wa.me/+6282236012023', '_blank');
+  };
   return (
     <div className="relative w-full h-screen overflow-hidden bg-black text-white flex items-center justify-center">
       
@@ -60,7 +63,7 @@ const Page1 = () => {
           z-30
         "
       >
-        <button
+        <button onClick={kotakKu}
           className="tombol"
         >
           <span className="

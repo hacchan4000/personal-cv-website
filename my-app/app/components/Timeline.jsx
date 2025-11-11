@@ -2,6 +2,9 @@
 import React, { useEffect, useRef, useState } from "react";
 import { motion, useScroll, useTransform } from "framer-motion";
 
+import { history } from "@/public/Assets/assets";
+
+
 export const Timeline = ({ data }) => {
   const ref = useRef(null);
   const containerRef = useRef(null);

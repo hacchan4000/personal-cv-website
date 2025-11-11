@@ -49,6 +49,9 @@ import Java_logo from './Skills/Java_programming_language_logo.svg.png'
 import Python_logo from './Skills/Python-logo-notext.svg.png'
 import C_logo from './Skills/ISO_C++_Logo.svg.png'
 
+import gambar1 from './history/gambar1.png'
+import gambar3 from './history/gambar3.png'
+
 
 export const assets = {
     ad1,
@@ -78,6 +81,7 @@ export const icons = {
     img10,
 
 }
+
 export const skills = {
     React_Logo,
     godot_logo,
@@ -326,9 +330,12 @@ export const data = [
         </div>
       ),
     },
-  ];
+];
 
-
+export const history = {
+    gambar1,
+    gambar3,
+}
 
 export const experienceData = [
     {
