@@ -2,6 +2,7 @@ import React from 'react'
 import Link from 'next/link'
 
 const Blog = ({ title, desc, image, category, id }) => {
+  
   return (
     <Link href={`/blogs/${id}`} className="">
       <div className="flex flex-col border-2 border-white bg-black rounded-2xl 

@@ -370,21 +370,21 @@ export const projects = [
   {
     no:'01',
     title:'NAWASENA',
-    desc: 'Description of your first project here',
+    desc: 'My first animation for GEMASTIK XV',
     link: ''
 
   },
   {
     no:'02',
     title:"ADITYA'S WORLD",
-    desc: 'Description of your first project here',
+    desc: 'A 3D world i made',
     link: ''
 
   },
   {
     no:'03',
     title:'ASAH CAPSTONE',
-    desc: 'Description of your first project here',
+    desc: 'ML implementation on a real world use case',
     link: ''
 
   },
@@ -398,21 +398,21 @@ export const projects = [
   {
     no:'05',
     title:'THRASHWORLDSIM',
-    desc: 'Description of your first project here',
+    desc: 'An idle clicker game',
     link: ''
 
   },
   {
     no:'06',
     title:'UDAYANA ROBLOX',
-    desc: 'Description of your first project here',
+    desc: 'A roblox experience set in Udayana University',
     link: ''
 
   },
   {
     no:'07',
     title:'SMALA ROBLOX',
-    desc: 'Description of your first project here',
+    desc: 'A roblox experience set in SMAN 5 SBY',
     link: ''
 
   },

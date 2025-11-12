@@ -1,3 +1,4 @@
+
 // page untuk blogs
 //ini page bloglist
 'use client'
@@ -10,6 +11,7 @@ import Blog from './Blog.jsx'
 
 const Page6 = () => {
   const [menu, setMenu] = useState("All");
+  
   return (
     <div className="relative w-full h-420 bg-black text-white flex flex-col items-center overflow-hidden rounded-4xl">
       <h1

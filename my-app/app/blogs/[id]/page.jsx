@@ -13,6 +13,7 @@ const Page = async ({ params }) => {
   const { id } = await params // ✅ must await params now
   const blogId = Number(id)
 
+  
   let data = blogs.find(b => b.id === blogId) || blogs2.find(b => b.id === blogId)
   const hari = new Date(data.date)
   const formatted = hari.toISOString().split('T')[0];

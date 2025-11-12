@@ -5,7 +5,7 @@ const Schema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    desc:{
+    description:{
         type:String,
         required:true,
     },
@@ -17,7 +17,7 @@ const Schema = new mongoose.Schema({
         type:String,
         required:true,
     },
-    img:{
+    image:{
         type:String,
         required:true,
     },
