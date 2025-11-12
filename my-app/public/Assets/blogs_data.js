@@ -66,12 +66,12 @@ export const blogs = [
   },
   {
     id:8,
-    title: "Is Having a bf Embarassing Now?",
+    title: "Is Having a Boyfriend Embarassing Now?",
     desc: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor fuga rerum exercitationem nemo repellendus beatae magnam ex, nostrum deleniti dolores.",
     img: "https://assets.vogue.com/photos/6902341b8d2485587b8de59f/master/w_960,c_limit/584042390",
     date: Date.now(),
     category: "Fashion",
-    author: "Alex",
+    author: "Alexander Consana",
   },
 ];
 export const blogs2 = [
@@ -148,3 +148,7 @@ export const blogs2 = [
     author: "Alex",
   },
 ];
+
+export const blogs3 = [
+  {},
+]

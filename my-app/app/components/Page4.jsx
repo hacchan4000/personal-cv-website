@@ -1,7 +1,7 @@
 //page untuk experienceku
 import React from 'react'
 import Image from 'next/image'
-import { assets, experience } from '@/public/Assets/assets'
+import { assets, exp } from '@/public/Assets/assets'
 
 
 const Page4 = () => {
@@ -20,6 +20,7 @@ const Page4 = () => {
         EXPERIENCE
       </h1>
       <div>
+
         <div className='card'>
           <div>
             <h1 className='text-[110px]'>01</h1>
@@ -35,6 +36,7 @@ const Page4 = () => {
             </p>
           </div>
         </div>
+
         <div className='card'>
           <div>
             <h1 className='text-[110px]'>02</h1>
