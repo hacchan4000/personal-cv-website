@@ -52,6 +52,7 @@ import C_logo from './Skills/ISO_C++_Logo.svg.png'
 import gambar1 from './history/gambar1.png'
 import gambar3 from './history/gambar3.png'
 
+
 //aset di seluruh halaman
 export const assets = {
     ad1,
@@ -335,36 +336,91 @@ export const data = [
     },
 ];
 
-
+//untuk pengalamanku di page 4
 export const exp = [
     {
         num:'01',
         judul: 'GAME DEVELOPMENT',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-        link: ''
+       
     },
     {
         num:'02',
         judul: 'WEB DEVELOPMENT',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-        link: ''
     },
     {
         num:'03',
         judul: 'DATA SCIENCE',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-        link: ''
     },
     {
         num:'04',
         judul: 'GRAPHIC DESIGN',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-        link: ''
     },
     {
-        icon:'05',
+        num:'05',
         judul: '3D DESIGN & ANIMATION',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-        link: ''
     }
+]
+
+export const projects = [
+  {
+    no:'01',
+    title:'NAWASENA',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'02',
+    title:"ADITYA'S WORLD",
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'03',
+    title:'ASAH CAPSTONE',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'04',
+    title:'DATA ANALYTICS',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'05',
+    title:'THRASHWORLDSIM',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'06',
+    title:'UDAYANA ROBLOX',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'07',
+    title:'SMALA ROBLOX',
+    desc: 'Description of your first project here',
+    link: ''
+
+  },
+  {
+    no:'08',
+    title:'GASS',
+    desc: 'Short for Go And Start the Street, a platform to rent a motor',
+    link: ''
+
+  },
 ]

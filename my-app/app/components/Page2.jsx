@@ -1,4 +1,4 @@
-'use client'
+
 //this is my-app/app/components/Page2.jsx
 import React from 'react'
 import Image from 'next/image'

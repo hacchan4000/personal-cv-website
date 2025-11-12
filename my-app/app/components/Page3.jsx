@@ -27,7 +27,7 @@ const Page3 = () => {
       </h1>
 
       {/* Timeline Section */}
-      <div className="w-full max-w-6xl px-4 md:px-10">
+      <div className="w-full max-w-6xl px-4 md:px-5">
         <Timeline data={data} />
       </div>
     </div>
