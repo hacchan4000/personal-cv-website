@@ -2,16 +2,43 @@
 // page untuk display blogs
 //ini page bloglist
 'use client'
-import React, { useState } from "react";
-import { blogs, blogs2 } from '@/public/Assets/blogs_data' //ini blog data
+import React, { useState, useEffect } from "react";
+import { blogs2 } from '@/public/Assets/blogs_data' //ini blog data
 import Blog from './Blog.jsx'
+import { get } from "http";
 
 
 
 
 const Page6 = () => {
   const [menu, setMenu] = useState("All");
-  
+  const [blogs, setBlogs] = useState([]);
+
+  const fetchBlogs = async () => {
+    try {
+      const response = await fetch("/api/blog", { //untuk kirim data pake API
+        method: "GET",
+      });
+
+      const data = response.json();
+
+      if (Array.isArray(data.blogs)) {
+        setBlogs(data.blogs);
+        console.log(response.data.blogs)
+      } else {
+        console.error("No blogs found in response:", data);
+        setBlogs([]);
+      }
+    } catch (error) {
+      console.error("Failed to fetch blogs:", err);
+    }
+    
+  };
+
+  useEffect(() => {
+    fetchBlogs();
+  }, []);
+
   return (
     <div className="relative w-full h-420 bg-black text-white flex flex-col items-center overflow-hidden rounded-4xl">
       <h1
@@ -23,12 +50,7 @@ const Page6 = () => {
       <div className="text-center">
         <p className="mt-10 max-w-[740px] m-auto text-xs sm:text-base">This is my personal blog post where is share many stories that caught my interest. Feel free to browse around and even subscribe if you want to keep being updated and receive plenty opportunities.</p>
 
-        <form action="" className="flex justify-between max-w-[500px] scale-75 sm:scale-100 mx-auto mt-10 border-2 border-white rounded-xl">
-          <input type="email" placeholder="Enter your email" className="pl-4 outline-none" />
-          <button type="submit" className='border-l-2 border-white py-4 px-4 sm:px-8 active:bg-white active:text-black rounded-r-lg'>
-              Sign Up
-          </button>
-        </form>
+        
         
       </div>
 
