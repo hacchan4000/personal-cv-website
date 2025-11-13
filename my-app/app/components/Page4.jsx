@@ -23,6 +23,7 @@ const Page4 = () => {
         {exp.map((item, index) => (
           <Experience
             key={index}
+            id={item.id}
             num={item.num}
             judul={item.judul}
             deskripsi={item.deskripsi}

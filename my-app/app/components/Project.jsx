@@ -6,7 +6,7 @@ const Project = ({no, title, desc, link}) => {
     }
   return (
     <>
-    <div className="sticky top-30 h-190 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
+    <div className="sticky top-30 h-150 w-[80%] md:w-[70%] bg-black rounded-3xl border-2 border-white p-5 shadow-lg shadow-white/10">
                 
         <div className="flex flex-col sm:flex-row items-start sm:items-center sm:gap-6 justify-between">
           <h1 className="font-bold text-[50px] sm:text-[70px] -mt-2 sm:-mt-4">{no}</h1>
@@ -22,12 +22,13 @@ const Project = ({no, title, desc, link}) => {
           </button> 
         </div>
 
-      
-
         
-        <div>
-
+        <div className='bg-white w-full h-[80%] rounded-2xl'>
         </div>
+          
+
+      
+        
 
         
                

@@ -11,6 +11,8 @@ import blur from './blur.png';
 import TextFooter from './text.png';
 import design from './design.png';
 
+import banner1 from './banner1.png';
+
 //icons
 import img1 from './icons/img1.png';
 import img2 from './icons/img2.png';
@@ -68,7 +70,7 @@ export const assets = {
     TextFooter,
     design,
     upload,
-    
+    banner1,
 }
 
 //untuk footer
@@ -341,28 +343,37 @@ export const data = [
 //untuk pengalamanku di page 4
 export const exp = [
     {
+        id : 1,
         num:'01',
+        img: '/Assets/banner1.png',
         judul: 'GAME DEVELOPMENT',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
-       
     },
     {
+        id : 2,
         num:'02',
+        img: '',
         judul: 'WEB DEVELOPMENT',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
     },
     {
+        id : 3,
         num:'03',
+        img: '',
         judul: 'DATA SCIENCE',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
     },
     {
+        id : 4,
         num:'04',
+        img: '/Assets/banner4.png',
         judul: 'GRAPHIC DESIGN',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
     },
     {
+        id : 5,
         num:'05',
+        img: '/Assets/banner5.png',
         judul: '3D DESIGN & ANIMATION',
         deskripsi: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat alias ad rerum adipisci, iusto hic ipsa excepturi, repudiandae earum dolore ipsam. Quia sapiente deserunt reiciendis, aperiam earum nulla nobis rem perferendis esse beatae quo dolore, pariatur enim? Expedita, nulla distinctio?',
     }
@@ -373,6 +384,9 @@ export const projects = [
     no:'01',
     title:'NAWASENA',
     desc: 'My first animation for GEMASTIK XV',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
@@ -380,6 +394,9 @@ export const projects = [
     no:'02',
     title:"ADITYA'S WORLD",
     desc: 'A 3D world i made',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
@@ -387,6 +404,9 @@ export const projects = [
     no:'03',
     title:'ASAH CAPSTONE',
     desc: 'ML implementation on a real world use case',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
@@ -394,6 +414,9 @@ export const projects = [
     no:'04',
     title:'DATA ANALYTICS',
     desc: 'Description of your first project here',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
@@ -401,6 +424,9 @@ export const projects = [
     no:'05',
     title:'THRASHWORLDSIM',
     desc: 'An idle clicker game',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
@@ -408,21 +434,11 @@ export const projects = [
     no:'06',
     title:'UDAYANA ROBLOX',
     desc: 'A roblox experience set in Udayana University',
+    img1: '',
+    img2: '',
+    img3: '',
     link: ''
 
   },
-  {
-    no:'07',
-    title:'SMALA ROBLOX',
-    desc: 'A roblox experience set in SMAN 5 SBY',
-    link: ''
-
-  },
-  {
-    no:'08',
-    title:'GASS',
-    desc: 'Short for Go And Start the Street, a platform to rent a motor',
-    link: ''
-
-  },
+  
 ]
