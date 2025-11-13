@@ -54,8 +54,26 @@ export async function POST(request) {
 
 
 //API endpoint untuk dapetin semua blognya
-export async function GET() {
+export async function GET(request) {
+  try {
+    const { searchParams } = new URL(request.url);
+    const blogId = searchParams.get("id");
 
-  const blogs = await BlogModel.find({}); //utk nyari semua blog di blog model trs nyimpen ke var blogs
-  return NextResponse.json({ blogs });
+    if (blogId) {
+      const blog = await BlogModel.findById(blogId);
+      if (!blog) {
+        return NextResponse.json({ error: "Blog not found" }, { status: 404 });
+      }
+      return NextResponse.json({ blog });
+    } else {
+      const blogs = await BlogModel.find().sort({ date: -1 });
+      return NextResponse.json({ blogs });
+    }
+  } catch (err) {
+    console.error("Error fetching blogs:", err);
+    return NextResponse.json(
+      { error: "Failed to fetch blogs" },
+      { status: 500 }
+    );
+  }
 }
