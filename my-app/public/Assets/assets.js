@@ -22,6 +22,7 @@ import img7 from './icons/img7.png';
 import img8 from './icons/img8.png';
 import img9 from './icons/img9.png';
 import img10 from './icons/img10.png';
+import upload from './icons/cloud-upload.svg';
 
 //sertif
 import sertif1 from './certificates/sertif1.png';
@@ -66,6 +67,7 @@ export const assets = {
     blur,
     TextFooter,
     design,
+    upload,
     
 }
 
