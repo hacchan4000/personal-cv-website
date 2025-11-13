@@ -1,5 +1,5 @@
 
-// page untuk blogs
+// page untuk display blogs
 //ini page bloglist
 'use client'
 import React, { useState } from "react";

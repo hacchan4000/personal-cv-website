@@ -2,7 +2,7 @@
 //this is my-app/app/components/Page2.jsx
 import React from 'react'
 import Image from 'next/image'
-import { skills , assets, certificates } from '@/public/Assets/assets'
+import { skills , certificates } from '@/public/Assets/assets'
 import { div } from 'three/src/nodes/TSL.js'
 
 const Page2 = () => {

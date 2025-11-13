@@ -1,0 +1,17 @@
+----------------------------3bf007f39d998e17d015b7ed
+Content-Disposition: form-data; name="title"
+
+test judul
+----------------------------3bf007f39d998e17d015b7ed
+Content-Disposition: form-data; name="description"
+
+test desc
+----------------------------3bf007f39d998e17d015b7ed
+Content-Disposition: form-data; name="author"
+
+adit
+----------------------------3bf007f39d998e17d015b7ed
+Content-Disposition: form-data; name="category"
+
+Fashion
+----------------------------3bf007f39d998e17d015b7ed--

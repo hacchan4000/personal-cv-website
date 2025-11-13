@@ -4,7 +4,7 @@ import { assets, icons } from "@/public/Assets/assets";
 
 const Footer = () => {
   return (
-    <div className="absolute w-full h-30 bg-black rounded-2xl">
+    <div className="absolute w-full h-30 bg-black rounded-2xl justify-around">
       <div className="relative flex items-center justify-between mx-5 bg-black">
         
         {/* Logo / Text */}
@@ -44,6 +44,7 @@ const Footer = () => {
         </div>
         
       </div>
+      
       <div className="flex space-x-16 overflow-hidden group">
         <div className="flex space-x-20 bg-black animate-loop-scroll group-hover:paused">
           <Image src={icons.img1} alt="img" className="max-w-none h-30 w-auto object-contain"/>
@@ -71,7 +72,7 @@ const Footer = () => {
         </div>
             
 
-          </div>
+      </div>
     </div>
   );
 };

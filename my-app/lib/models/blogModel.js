@@ -1,3 +1,5 @@
+
+// /Users/mac/Desktop/personal-cv-website/my-app/lib/models/blogModel.js
 import mongoose from "mongoose";
 
 const Schema = new mongoose.Schema({

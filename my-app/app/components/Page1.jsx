@@ -3,7 +3,6 @@
 import React from 'react'
 import Image from 'next/image'
 import { assets } from '@/public/Assets/assets'
-import { skills } from '@/public/Assets/assets'
 
 const Page1 = () => {
   const kotakKu = () => {
