@@ -1,4 +1,4 @@
-//import asset gambar dekorasi
+//import asset gambar dekorasi /Users/mac/Desktop/personal-cv-website/my-app/public/Assets/assets.js
 import ad1 from './ad1.png';
 import ad2 from './ad2.png';
 import ad3 from './ad3.png';
