@@ -48,11 +48,6 @@ const Page7 = () => {
         {/* Left images (hidden on small screens to save space) */}
         <div className="relative hidden md:flex flex-col">
           <Image
-            src={assets.nookie}
-            alt="nook"
-            className="w-80 object-contain "
-          />
-          <Image
             src={assets.adamHello}
             alt="adam"
             className="w-80 object-contain absolute top-20 right-30"

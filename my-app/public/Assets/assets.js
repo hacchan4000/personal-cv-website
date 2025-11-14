@@ -3,7 +3,6 @@ import ad1 from './ad1.png';
 import ad2 from './ad2.png';
 import ad3 from './ad3.png';
 import adamHello from './adamHello.png';
-import nookie from './nookie.png';
 import logo from './logo.png'
 import menu from './menu-bar.png'
 import text_page1 from './text-page1.png';
@@ -62,7 +61,6 @@ export const assets = {
     ad2,
     ad3,
     adamHello,
-    nookie,
     logo,
     menu,
     text_page1,
