@@ -1,7 +1,7 @@
 // my-app/app/components/Page4.jsx
 import React from 'react'
 import { exp } from '@/public/Assets/assets'
-import Experience from './Experience'
+import Experience from './Experience.jsx'
 
 const Page4 = () => {
   return (
