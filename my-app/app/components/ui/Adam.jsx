@@ -169,7 +169,7 @@ export function Adam(props) {
         castShadow
         receiveShadow
         geometry={nodes.NurbsPath001.geometry}
-        material={materials['Material.002']}
+        material={materials['Material.045']}
         position={[0.048, 3.694, 0.089]}
         rotation={[-2.79, 0.625, 2.439]}
         scale={[0.093, 0.087, 0.083]}

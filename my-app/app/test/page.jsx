@@ -11,7 +11,9 @@ const page = () => {
   
   
   return (
-    <div id="canvas-container" style={{width:'100vw', height:'100vw'}}>
+    <>
+    
+    <div id="canvas-container" style={{width:'100vw', height:'100vw',z:0}}>
       <Canvas camera={{
         position: [0.89, 2.5, -5.5],
         fov: 45,
@@ -33,6 +35,8 @@ const page = () => {
         
       </Canvas>
     </div>
+    </>
+    
   )
 }
 
